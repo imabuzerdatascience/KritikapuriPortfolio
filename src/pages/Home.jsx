@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Ruler, Users, FileVideo, LineChart, Mail, MapPin } from 'lucide-react';
+import { posts } from '../data/posts';
 
 const Home = () => {
   const services = [
@@ -63,24 +64,7 @@ const Home = () => {
     }
   ];
 
-  const recentPosts = [
-    {
-      id: 1,
-      title: "5 Things I Like About My Marketing Course at University...",
-      date: "May 2026",
-      category: "Education",
-      image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=800&auto=format&fit=crop",
-      excerpt: "Choosing to study marketing at the University of Wolverhampton has been one of the most strategic decisions in shaping my career..."
-    },
-    {
-      id: 2,
-      title: "The Power of Community Management for Modern Brands",
-      date: "June 2026",
-      category: "Strategy",
-      image: "https://images.unsplash.com/photo-1542744094-24638ea0b5b5?q=80&w=800&auto=format&fit=crop",
-      excerpt: "Building a brand isn't just about broadcasting messages; it's about listening, engaging, and fostering a sense of belonging..."
-    }
-  ];
+  const recentPosts = posts.slice(0, 2);
 
   return (
     <div className="bg-[#fbfaf6]">
@@ -242,7 +226,7 @@ const Home = () => {
           
           <div className="grid md:grid-cols-2 gap-8">
             {recentPosts.map((post) => (
-              <Link to="/blog" key={post.id} className="block group">
+              <Link to={`/blog/${post.id}`} key={post.id} className="block group">
                  <article className="bg-[#fbfaf6] rounded-[2rem] border border-gray-100 transition-all duration-300 group-hover:border-pinkLight group-hover:shadow-lg overflow-hidden h-full flex flex-col">
                   <div className="h-48 overflow-hidden">
                     <img src={post.image} alt={post.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
