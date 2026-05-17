@@ -7,7 +7,7 @@ export const posts = [
     author: "By Kritika Puri – Aspiring Social Media Manager",
     date: "May 2026",
     category: "Education & Growth",
-    image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800", 
+    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop", 
     excerpt: "Choosing to study marketing at the University of Wolverhampton has been one of the most strategic decisions in shaping my career... Here are five aspects of the course that have significantly influenced my professional growth.",
     content: (
       <div className="space-y-6 text-textLight text-lg leading-relaxed font-sans">
@@ -45,7 +45,7 @@ export const posts = [
     author: "By Kritika Puri – Aspiring Social Media Manager",
     date: "June 2026",
     category: "Strategy & Engagement",
-    image: "https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=800&auto=format&fit=crop",
     excerpt: "Building a brand isn't just about broadcasting messages; it's about listening, engaging, and fostering a sense of belonging among your audience. Real growth comes from authentic community management.",
     content: (
       <div className="space-y-6 text-textLight text-lg leading-relaxed font-sans">
@@ -65,7 +65,7 @@ export const posts = [
     author: "By Kritika Puri – Aspiring Social Media Manager",
     date: "July 2026",
     category: "Data-Driven Marketing",
-    image: "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
     excerpt: "Stop relying solely on gut feelings. The most successful social media campaigns are those where creative vision is directly informed by data, engagement metrics, and audience behaviour insights.",
     content: (
       <div className="space-y-6 text-textLight text-lg leading-relaxed font-sans">
