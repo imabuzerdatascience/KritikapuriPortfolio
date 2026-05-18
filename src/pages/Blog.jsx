@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { posts } from '../data/posts';
+import BlogCardStats from '../components/BlogCardStats';
 
 const Blog = () => {
 
@@ -53,11 +54,13 @@ const Blog = () => {
                   {post.title}
                 </h2>
                 
-                <p className="text-textLight text-sm leading-relaxed mb-8 flex-grow">
+                <p className="text-textLight text-sm leading-relaxed mb-4 flex-grow">
                   {post.excerpt}
                 </p>
                 
-                <div className="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
+                <BlogCardStats postId={post.id} />
+                
+                <div className="mt-4 pt-4 border-t border-gray-50 flex items-center justify-between">
                   <span className="text-xs font-semibold text-gray-500">{post.author}</span>
                   <span className="text-sm font-bold text-pinkAccent group-hover:text-pink-600 transition-colors flex items-center gap-1">
                     Read More <span className="group-hover:translate-x-1 transition-transform">→</span>

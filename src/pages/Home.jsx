@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Ruler, Users, FileVideo, LineChart, Mail, MapPin } from 'lucide-react';
 import { posts } from '../data/posts';
+import BlogCardStats from '../components/BlogCardStats';
 
 const Home = () => {
   const services = [
@@ -244,7 +245,8 @@ const Home = () => {
                     <p className="text-textLight text-sm leading-relaxed flex-grow">
                       {post.excerpt}
                     </p>
-                    <div className="mt-8 pt-6 border-t border-gray-200">
+                    <BlogCardStats postId={post.id} />
+                    <div className="mt-4 pt-4 border-t border-gray-100">
                       <span className="text-sm font-bold text-pinkAccent group-hover:underline decoration-2 underline-offset-4">Read Article</span>
                     </div>
                   </div>
